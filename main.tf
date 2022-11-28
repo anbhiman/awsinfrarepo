@@ -15,9 +15,9 @@ backend "s3" {
 
 provider "aws" {
 
-    access_key = "AKIAUGZKCRXRBWOPSHP2"
+   aws_access_key_id = "AKIAUGZKCRXRBWOPSHP2"
 
-    secret_key = "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"
+    aws_secret_access_key = "W4rjqUu/yvbwoJMyh8ULqLzq4YCLPhxrGZA6izND"
 
     region = "us-east-1"
 
