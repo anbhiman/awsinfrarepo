@@ -19,20 +19,4 @@ provider "aws" {
 }
 
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-testtre1-bucket"
-  versioning {
-      enabled = true
-   }
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
 
-resource "aws_athena_database" "example" {
-  name   = "database1_name"
-  bucket = aws_s3_bucket.b.bucket
-
-  
-}
