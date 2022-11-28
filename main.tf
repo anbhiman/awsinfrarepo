@@ -20,7 +20,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-testdev-bucket"
+  bucket = "my-tf-testtre-bucket"
   versioning {
       enabled = true
    }
@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "b" {
 }
 
 resource "aws_athena_database" "example" {
-  name   = "athena_database_dev"
+  name   = "database-name"
   bucket = aws_s3_bucket.b.bucket
 
   
