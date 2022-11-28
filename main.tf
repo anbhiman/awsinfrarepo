@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "b" {
 }
 
 resource "aws_athena_database" "example" {
-  name   = "database-name"
+  name   = "database_name"
   bucket = aws_s3_bucket.b.bucket
 
   
