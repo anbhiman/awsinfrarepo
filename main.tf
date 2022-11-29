@@ -5,13 +5,7 @@ terraform {
      version = "3.23.0"
    }
 }
-backend "s3" {
-    bucket = "mydev-tf-state-bucket"
-    key = "terraform.tfstate"
-    region = "us-east-1"
-    profile = "my-profile"
-   
-  }
+
 }
 
 provider "aws" {
@@ -21,7 +15,7 @@ provider "aws" {
     aws_secret_access_key = "W4rjqUu/yvbwoJMyh8ULqLzq4YCLPhxrGZA6izND"
 
     region = "us-east-1"
-    profile = "my-profile"
+   
 
 }
 resource "aws_s3_bucket" "b" {
