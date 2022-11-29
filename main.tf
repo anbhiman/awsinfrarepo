@@ -19,7 +19,7 @@ provider "aws" {
 
 }
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-testtre-bucket"
+  bucket = "my-tf-testtre1-bucket"
   versioning {
       enabled = true
    }
